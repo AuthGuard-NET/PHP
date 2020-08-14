@@ -6,7 +6,7 @@
 ## Setup
 First you'll need to get your **Secret Key** and your **API Key**:
 - Secret Key is located at https://authguard.net/dashboard on your application's row
-- API Key is located at https://authguard.net/dashboard/account.php on the right
+- API Key is located at https://authguard.net/dashboard/account.php
 
 ### Connecting panel to your website
 After you got the your **Secret Key** and your **API Key**, you can now Initialize and connect your application to our servers
