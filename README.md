@@ -16,7 +16,7 @@ Guard::Initialize("API KEY", "SECRET KEY");
 ```
 ## Example
 ```
- AuthGG::Initialize("a4xefa5b126aa5e4be470140a522c10aa07a6d60", "35Yd6RgEM23XUmtpYTqFvW5IZ7xSX6hAcgdi7tXTC1Qwv");
+AuthGG::Initialize("a4xefa5b126aa5e4be470140a522c10aa07a6d60", "35Yd6RgEM23XUmtpYTqFvW5IZ7xSX6hAcgdi7tXTC1Qwv");
 ```
 ## Login
 
@@ -36,15 +36,15 @@ if (Guard::Login($username, $password))
 ## Register
 
 ```
- if (Guard::Register($username, $password, $email, $license))
-    {
+if (Guard::Register($username, $password, $email, $license))
+{
     //Code you want to do here on successful register
-    }
+}
 ```
 ## Extend Subscription
 ```
- if (Guard::UseToken($username, $password, $license))
-    {
+if (Guard::UseToken($username, $password, $license))
+{
     // Do code of what you want after successful extend here!
-    }
+}
 ```
