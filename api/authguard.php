@@ -19,6 +19,7 @@ class Guard
         ];
 
         $curl = curl_init(self::$API_ENDPOINT);
+        curl_setopt($curl, CURLOPT_USERAGENT, self::$USER_AGENT);
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
         curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
@@ -56,6 +57,7 @@ class Guard
         ];
 
         $curl = curl_init(self::$API_ENDPOINT);
+        curl_setopt($curl, CURLOPT_USERAGENT, self::$USER_AGENT);
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
         curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
@@ -109,6 +111,7 @@ class Guard
         ];
 
         $curl = curl_init(self::$API_ENDPOINT);
+        curl_setopt($curl, CURLOPT_USERAGENT, self::$USER_AGENT);
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
         curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
@@ -153,6 +156,7 @@ class Guard
         ];
 
         $curl = curl_init(self::$API_ENDPOINT);
+        curl_setopt($curl, CURLOPT_USERAGENT, self::$USER_AGENT);
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
         curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
@@ -200,6 +204,7 @@ class Guard
     private static $init = false;
 
     // CONSTANTS
+    private static $USER_AGENT = "AuthGuard";
     private static $CERT_PUBLICKEY = "sha256//7o5hfoky8MvnnaLcBBKjAy9cFNvCYnimjjAhkADjwbA=";
     private static $API_ENDPOINT = "https://api.authguard.net/v1/";
 }
